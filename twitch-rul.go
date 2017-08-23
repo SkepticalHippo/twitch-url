@@ -3,11 +3,12 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/grafov/m3u8"
 	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
+
+	"github.com/grafov/m3u8"
 )
 
 type TokenResponse struct {
@@ -53,7 +54,7 @@ func main() {
 	p, listType, err := m3u8.DecodeFrom(resp.Body, false)
 
 	if listType != m3u8.MASTER {
-		fmt.Println("Could not find stream.")
+		fmt.Println("Stream offline or does not exist.")
 	}
 
 	masterpl := p.(*m3u8.MasterPlaylist)
