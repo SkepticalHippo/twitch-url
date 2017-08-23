@@ -47,10 +47,6 @@ func main() {
 		fmt.Println(err)
 	}
 
-	if err != nil {
-		fmt.Println(err)
-	}
-
 	p, listType, err := m3u8.DecodeFrom(resp.Body, false)
 
 	if listType != m3u8.MASTER {
