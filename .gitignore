@@ -12,8 +12,5 @@
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
-<<<<<<< HEAD
 
 twitch-url
-=======
->>>>>>> f87676e1419be67c60c1e0011e618ff73d9b4ca0
